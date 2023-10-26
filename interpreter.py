@@ -17,7 +17,10 @@ if __name__ == '__main__':
         user_option = input('Please enter an option: ')
         if user_option == '1':
             original_password = input('Please enter your password to encode: ')
-            password = encode(original_password)
+            password_encode = encode(original_password)
             print('Your password has been encoded and stored!\n')
+        if user_option == '2':
+            password_decode = decode(password_encode)
+            print(f'The encoded password is {password_encode}, and the original password is {password_decode}.')
         if user_option == '3':
             break
